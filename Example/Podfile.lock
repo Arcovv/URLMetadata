@@ -1,0 +1,23 @@
+PODS:
+  - Kanna (5.0.0)
+  - URLMetadata (0.1.0):
+    - Kanna (~> 5.0.0)
+
+DEPENDENCIES:
+  - URLMetadata (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Kanna
+
+EXTERNAL SOURCES:
+  URLMetadata:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Kanna: a32875df62975f8f4b871e933b4ea1a5c3b8be0f
+  URLMetadata: 96d4d5fa833be98d4ff8421c8d86bb8b71b9331a
+
+PODFILE CHECKSUM: 28debf9927cae114249690e9a3ff86d6a60e4b2d
+
+COCOAPODS: 1.8.4

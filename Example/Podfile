@@ -1,4 +1,6 @@
 use_frameworks!
+platform :ios, '13.0'
+
 target 'URLMetadata_Tests' do
   pod 'URLMetadata', :path => '../'
   

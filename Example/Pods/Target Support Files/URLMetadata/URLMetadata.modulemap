@@ -1,0 +1,6 @@
+framework module URLMetadata {
+  umbrella header "URLMetadata-umbrella.h"
+
+  export *
+  module * { export * }
+}
