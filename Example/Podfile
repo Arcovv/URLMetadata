@@ -1,0 +1,6 @@
+use_frameworks!
+target 'URLMetadata_Tests' do
+  pod 'URLMetadata', :path => '../'
+  
+  
+end
