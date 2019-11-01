@@ -21,11 +21,12 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/Arco/URLMetadata'
+  s.homepage         = 'https://github.com/Arcovv/URLMetadata'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Arco' => 'yiyezhihen@gmail.com' }
-  s.source           = { :git => 'https://github.com/Arco/URLMetadata.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Arcovv/URLMetadata.git', :tag => s.version.to_s }
+  s.swift_version    = '5.1'
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '13.0'
@@ -38,5 +39,9 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-   s.dependency 'Kanna', '~> 5.0.0'
+  s.dependency 'Kanna', '~> 5.0.0'
+  s.xcconfig = {
+   'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2',
+   'SWIFT_INCLUDE_PATHS' => '$(SRCROOT)/Kanna/Modules'
+ }
 end
