@@ -10,6 +10,12 @@
 		0CF5C98CE63D3AE8A76E26610D625B5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78AD03FCEEF8BC92BFAD193952CA319 /* Foundation.framework */; };
 		183ED56ED5A304D31BF95FB4FF100E09 /* libxmlHTMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C925A835AA4A90FD83B12136E5C54356 /* libxmlHTMLNode.swift */; };
 		1F5E8CC0E12AED9DEF1FA149713B3D29 /* Kanna-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F90F805728F40C7FD72D311000C1658 /* Kanna-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DEB31E7236E9EDC007EF87D /* MetaProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEB31E1236E9EDB007EF87D /* MetaProperty.swift */; };
+		2DEB31E8236E9EDC007EF87D /* MetadataEnvelope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEB31E2236E9EDB007EF87D /* MetadataEnvelope.swift */; };
+		2DEB31E9236E9EDC007EF87D /* MetadataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEB31E3236E9EDB007EF87D /* MetadataManager.swift */; };
+		2DEB31EA236E9EDC007EF87D /* MetadataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEB31E4236E9EDB007EF87D /* MetadataError.swift */; };
+		2DEB31EB236E9EDC007EF87D /* Array+Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEB31E5236E9EDC007EF87D /* Array+Metadata.swift */; };
+		2DEB31EC236E9EDC007EF87D /* MetadataRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEB31E6236E9EDC007EF87D /* MetadataRequester.swift */; };
 		4931A0D52921C13D6BE42385AB5F9A62 /* CSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B501FFCA8AA07902B3EE3620AC29BA /* CSS.swift */; };
 		4FD75C34251BE20E5E56A2F79B63AC1F /* URLMetadata-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D949FF34320E67FFEB50DC790D531FA7 /* URLMetadata-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54C6448CFCEA4A56C940BB1BCB0F60C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78AD03FCEEF8BC92BFAD193952CA319 /* Foundation.framework */; };
@@ -61,24 +67,30 @@
 		236494C606D889059B4BA2CA99B0390F /* URLMetadata.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = URLMetadata.xcconfig; sourceTree = "<group>"; };
 		275668E46CD22CC21B62C049DE94AB24 /* Kanna-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Kanna-Info.plist"; sourceTree = "<group>"; };
 		2782E191930E7699B4FEBC1A88FD67AF /* Metadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Metadata.swift; path = URLMetadata/Classes/Metadata.swift; sourceTree = "<group>"; };
-		27FAECFD9D07F41CCCE67BCC39019A2F /* URLMetadata.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = URLMetadata.framework; path = URLMetadata.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		31CB0F281B1CC4CC4B5CCDD7F927274C /* URLMetadata.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = URLMetadata.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		27FAECFD9D07F41CCCE67BCC39019A2F /* URLMetadata.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = URLMetadata.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DEB31E1236E9EDB007EF87D /* MetaProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MetaProperty.swift; path = URLMetadata/Classes/MetaProperty.swift; sourceTree = "<group>"; };
+		2DEB31E2236E9EDB007EF87D /* MetadataEnvelope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MetadataEnvelope.swift; path = URLMetadata/Classes/MetadataEnvelope.swift; sourceTree = "<group>"; };
+		2DEB31E3236E9EDB007EF87D /* MetadataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MetadataManager.swift; path = URLMetadata/Classes/MetadataManager.swift; sourceTree = "<group>"; };
+		2DEB31E4236E9EDB007EF87D /* MetadataError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MetadataError.swift; path = URLMetadata/Classes/MetadataError.swift; sourceTree = "<group>"; };
+		2DEB31E5236E9EDC007EF87D /* Array+Metadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Array+Metadata.swift"; path = "URLMetadata/Classes/Array+Metadata.swift"; sourceTree = "<group>"; };
+		2DEB31E6236E9EDC007EF87D /* MetadataRequester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MetadataRequester.swift; path = URLMetadata/Classes/MetadataRequester.swift; sourceTree = "<group>"; };
+		31CB0F281B1CC4CC4B5CCDD7F927274C /* URLMetadata.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = URLMetadata.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		347384E14CADDE2766B372F4FD99A8E3 /* URLMetadata-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "URLMetadata-prefix.pch"; sourceTree = "<group>"; };
 		3ABC1CA050E5AA64AC502557BF7AB617 /* Kanna.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Kanna.modulemap; sourceTree = "<group>"; };
-		3C0C7B3FA83EB5F5EA662D74D293825E /* Pods_URLMetadata_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_URLMetadata_Tests.framework; path = "Pods-URLMetadata_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C0C7B3FA83EB5F5EA662D74D293825E /* Pods_URLMetadata_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URLMetadata_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C6DF13E6E28276EAE764CD3160D1FBB /* libxmlParserOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlParserOption.swift; path = Sources/Kanna/libxmlParserOption.swift; sourceTree = "<group>"; };
-		3EA922F9B70178D64EE578C60F4DD23B /* Kanna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kanna.framework; path = Kanna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B6543D5E98C137E877754841DEAB451 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		3EA922F9B70178D64EE578C60F4DD23B /* Kanna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kanna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B6543D5E98C137E877754841DEAB451 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		64EB0B09CAF0606F2AE46BD20D9D9ACC /* Pods-URLMetadata_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-URLMetadata_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6A36ECF6B2F13EAD05FCC6B327CA6952 /* Pods-URLMetadata_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-URLMetadata_Tests-Info.plist"; sourceTree = "<group>"; };
-		6A7E87F3264B7AE6608CE57254F67A42 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		6A7E87F3264B7AE6608CE57254F67A42 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		6F90F805728F40C7FD72D311000C1658 /* Kanna-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kanna-umbrella.h"; sourceTree = "<group>"; };
 		6F9741A2956900E8302A8FCBF85D01B3 /* Kanna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kanna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75BF140F6A84EC4488060D5FBDFC9359 /* Pods-URLMetadata_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-URLMetadata_Tests-dummy.m"; sourceTree = "<group>"; };
 		7B885292E41468A09DC78D86D7D37E3D /* URLMetadata-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "URLMetadata-Info.plist"; sourceTree = "<group>"; };
 		7DC12B0DF568E5A04C7BFB3AEADACA11 /* Pods-URLMetadata_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-URLMetadata_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		820D4B38838266BCFDB23662A9020773 /* Pods-URLMetadata_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-URLMetadata_Tests-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ADBB6BF1F42431B19BC4D48040F3E192 /* Pods-URLMetadata_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-URLMetadata_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B48E87DAB49E6284F115BFB6947BFECE /* Kanna-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kanna-dummy.m"; sourceTree = "<group>"; };
 		B665B05D51C2E8EBBF63D60BE235CBF4 /* Kanna.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kanna.h; path = Sources/Kanna/Kanna.h; sourceTree = "<group>"; };
@@ -196,7 +208,6 @@
 				3C6DF13E6E28276EAE764CD3160D1FBB /* libxmlParserOption.swift */,
 				0A7E9ECB7C0CFD150D7AFCA63E0652F7 /* Support Files */,
 			);
-			name = Kanna;
 			path = Kanna;
 			sourceTree = "<group>";
 		};
@@ -237,6 +248,12 @@
 			isa = PBXGroup;
 			children = (
 				2782E191930E7699B4FEBC1A88FD67AF /* Metadata.swift */,
+				2DEB31E5236E9EDC007EF87D /* Array+Metadata.swift */,
+				2DEB31E2236E9EDB007EF87D /* MetadataEnvelope.swift */,
+				2DEB31E4236E9EDB007EF87D /* MetadataError.swift */,
+				2DEB31E3236E9EDB007EF87D /* MetadataManager.swift */,
+				2DEB31E6236E9EDC007EF87D /* MetadataRequester.swift */,
+				2DEB31E1236E9EDB007EF87D /* MetaProperty.swift */,
 				100714A6CF9C98FE71854FBBFA24702A /* Pod */,
 				27BB66D36E95DA7D9149D02AF40D5C9E /* Support Files */,
 			);
@@ -426,7 +443,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DEB31E9236E9EDC007EF87D /* MetadataManager.swift in Sources */,
+				2DEB31EA236E9EDC007EF87D /* MetadataError.swift in Sources */,
+				2DEB31E8236E9EDC007EF87D /* MetadataEnvelope.swift in Sources */,
+				2DEB31EC236E9EDC007EF87D /* MetadataRequester.swift in Sources */,
+				2DEB31E7236E9EDC007EF87D /* MetaProperty.swift in Sources */,
 				B0EFAA5D49D0CF977326C0BDA36CC057 /* Metadata.swift in Sources */,
+				2DEB31EB236E9EDC007EF87D /* Array+Metadata.swift in Sources */,
 				948186BE909F099BE4409F2234694D25 /* URLMetadata-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,8 +539,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
